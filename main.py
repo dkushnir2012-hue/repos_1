@@ -1,16 +1,12 @@
-import poems
-import sing
+import utils
 
-name = "Іван Петренко"
 
-print(sing.SIGN.format(name))
-wishes = "Більше практики\nЦікаві проекти"
-print(wishes)
+def main():
+    utils.send_email(
+        recipients=['dkushnir2012@ukr.net'],
+        mail_body='this is mail body <br> another line',
+        mail_subject='Test data',
+    )
 
-stars = "**************************************************************************"
 
-print(stars)
-print(poems.POEM1)
-print(stars)
-print(poems.POEM2)
-print(stars)
+main()
